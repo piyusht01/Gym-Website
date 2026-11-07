@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333333;
+}
+
+/* Navbar */
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #286647;
+}
+
+nav h2 span {
+    color: #91bd9d;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+}
+
+nav a:hover {
+    color: #286647;
+}
+
+/* Hero */
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    background:
+        linear-gradient(90deg, #ffffff 25%, #ffffffcc 55%, transparent),
+        url("https://images.openai.com/static-rsc-4/DRqc4LNF_5gAy1_HVO19toDBU4BRyZFFS_HTj8KQKY24uNuH9z9d7yTOvgMrLcOIw5evyUIgibWkQhGjJd172D2Re1TMkdDHPf2jeaphM6OUgAJv7LsU3Y6dtEfBWAn-jUzcrZVKN97oqdsayH6o-xpEiP3lXOwaWmTuyN3PkkKMHdQKOaPhV50m_ynylYgI?purpose=fullsize")
+        center/cover no-repeat;
+}
+
+.hero-text {
+    max-width: 450px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #245c43;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    background: #286647;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #194b32;
+}
+
+/* About */
+.about {
+    padding: 60px 10%;
+    text-align: center;
+    background: #f3f7f3;
+}
+
+section h2 {
+    color: #245c43;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #666666;
+}
+
+/* Services */
+.services {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    width: 250px;
+    padding: 30px 20px;
+    background: #f3f7f3;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: #286647;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Plans */
+.plans {
+    padding: 60px 10%;
+    text-align: center;
+    background: #f3f7f3;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plan-card {
+    width: 220px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #d9e5da;
+}
+
+.plan-card h3 {
+    color: #286647;
+    margin-bottom: 15px;
+}
+
+.plan-card h2 {
+    font-size: 28px;
+}
+
+.plan-card p {
+    color: #777777;
+}
+
+/* Contact */
+.contact {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    color: #666666;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #245c43;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 400px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .service-container,
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card,
+    .plan-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
